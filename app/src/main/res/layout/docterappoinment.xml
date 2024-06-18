@@ -1,0 +1,160 @@
+<!-- appointment_item.xml -->
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/purpleDark"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        >
+
+        <ImageView
+            android:id="@+id/docterImage"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/docter1" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/doctorNameTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:padding="4dp"
+                    android:text="Dr."
+                    android:textColor="@color/colorWhite"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/line11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    android:padding="4dp"
+                    android:text="" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/doctorfees"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:padding="4dp"
+                    android:text="Consulant Fees:"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="18sp"
+                    android:textStyle="normal" />
+                <TextView
+                    android:id="@+id/line55"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textStyle="normal"
+                    android:textColor="@color/yellowlight"
+                    android:padding="4dp"
+                    android:text="" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/doctorAdress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:padding="4dp"
+                    android:text="Hospital Address:"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="18sp"
+                    android:textStyle="normal" />
+                <TextView
+                    android:id="@+id/line22"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textStyle="normal"
+                    android:textColor="@color/colorWhite"
+                    android:padding="4dp"
+                    android:text="" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/doctorNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:padding="4dp"
+                    android:text="Experience:"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="18sp"
+                    android:textStyle="normal" />
+                <TextView
+                    android:id="@+id/line33"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textStyle="normal"
+                    android:padding="4dp"
+                    android:textColor="@color/colorWhite"
+                    android:text="" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/doctorExpeiance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:padding="4dp"
+                    android:text="Mobile Number:"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="18sp"
+                    android:textStyle="normal" />
+                <TextView
+                    android:id="@+id/line44"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textStyle="normal"
+                    android:textColor="@color/yellowlight"
+                    android:padding="4dp"
+                    android:text="" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
+
+
+

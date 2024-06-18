@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BloodDonation">
+    <View
+        android:id="@+id/topView"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/backgrounddesign"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="@string/lifePluse"
+        android:textColor="@color/colorWhite"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textViewDonation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/request_blood"
+        android:textColor="@color/colorRed"
+        android:textSize="38sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.245"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <EditText
+        android:id="@+id/editTextUsername"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/person"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:hint="@string/username"
+        android:inputType="text"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDonation" />
+
+<!--    <EditText-->
+<!--        android:id="@+id/editTextBloodType"-->
+<!--        android:layout_width="350dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_marginStart="8dp"-->
+<!--        android:layout_marginTop="24dp"-->
+<!--        android:layout_marginEnd="8dp"-->
+<!--        android:background="@drawable/custom_input"-->
+<!--        android:drawableStart="@drawable/bloodtype"-->
+<!--        android:drawablePadding="12dp"-->
+<!--        android:ems="10"-->
+<!--        android:hint="@string/blood_type"-->
+<!--        android:inputType="text"-->
+<!--        android:paddingStart="12dp"-->
+<!--        android:paddingEnd="12dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.494"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/editTextUsername" />-->
+
+    <Spinner
+        android:id="@+id/spinnerBlood"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/custom_input"
+        android:paddingStart="20dp"
+        android:paddingEnd="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextUsername" />
+
+
+    <EditText
+        android:id="@+id/editTextGender"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/male"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:hint="@string/gender"
+        android:inputType="text"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerBlood" />
+
+    <EditText
+        android:id="@+id/editTextNearHospital"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/hospital"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:hint="@string/near_hospital"
+        android:inputType="text"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextGender" />
+
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/phone"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:hint="@string/phone_number"
+        android:inputType="number"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNearHospital" />
+
+    <Button
+        android:id="@+id/ButtonForRequest"
+        android:layout_width="270dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/btn1"
+        android:text="@string/request"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber" />
+    <Button
+        android:id="@+id/ButtonForRequestBack"
+        android:layout_width="270dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/btn1"
+        android:text="@string/back"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ButtonForRequest" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
